@@ -1,0 +1,16 @@
+@mixin display-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin tittle($size: auto) {
+  font-family: $font-tittle;
+  font-size: $size;
+}
+@mixin texte($size: auto) {
+  font-family: $font-text;
+  font-size: $size;
+}

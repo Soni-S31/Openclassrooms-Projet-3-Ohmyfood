@@ -1,0 +1,26 @@
+body {
+  @include display-column;
+  max-width: 599px;
+  box-sizing: content-box;
+  margin: 0;
+}
+
+header,
+.working,
+.selection,
+.search,
+footer {
+  padding: 30px;
+}
+
+.search__form {
+  @include display-row;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+.selection__card {
+  @include display-column;
+}
