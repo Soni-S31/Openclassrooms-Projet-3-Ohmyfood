@@ -16,22 +16,8 @@ body {
 header,
 .working,
 .selection,
-.search,
 footer {
   padding: 30px;
-}
-
-.search__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header {
@@ -41,6 +27,17 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.working {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .selection__card {
@@ -55,6 +52,17 @@ header {
 
 .search {
   font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.explain {
+  text-decoration: none;
+}
+
+.explain .explain__text,
+.explain .explain__numbers {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
   color: black;
 }
 
@@ -80,8 +88,10 @@ header {
   color: black;
 }
 
-.selection__tittle {
+.selection__tittle,
+.working__tittle {
   font-family: "Roboto", sans-serif;
+  font-size: 35px;
 }
 
 .nav ul {
@@ -94,18 +104,146 @@ header {
   font-family: "Roboto";
 }
 
+.search2__button {
+  padding: 25px 35px;
+  margin-block: 36px;
+  font-size: 23px;
+  color: #fff;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 40px;
+}
+
 header img {
   width: 50%;
 }
 
 header {
+  -webkit-box-shadow: 0px 3px 3px #f2eded;
+          box-shadow: 0px 3px 3px #f2eded;
+  background-color: #fff;
+}
+
+.search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-color: rgba(231, 228, 228, 0.945);
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(196, 192, 192, 0.918);
+          box-shadow: inset 0px 5px 5px -3px rgba(196, 192, 192, 0.918);
+}
+
+.search__form #searchcity {
+  font-size: 22px;
+  color: black;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  background-color: rgba(231, 228, 228, 0.945);
+  border: none;
+}
+
+.search__form .city {
+  font-size: 22px;
+}
+
+.search2 {
+  background-color: rgba(246, 244, 244, 0.993);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+}
+
+.search2 .search2__tittle {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 50px;
+  font-size: 35px;
+  margin-block: 18px;
+}
+
+.search2 .search2__description {
+  display: inline-block;
+  text-align: center;
+  font-weight: 100;
+  font-size: 27px;
+  color: grey;
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
+.explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: rgba(246, 244, 244, 0.993);
+  gap: 30px;
+  padding: 30px;
+  margin-left: 18px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.explain :hover {
+  background: #9356dc;
+}
+
+.explain .explain__numbers {
+  background: #9356dc;
+  border-radius: 100%;
+  color: #fff;
+  padding: 5px 10px;
+  margin-block: 8px;
+  position: absolute;
+  left: -14px;
+}
+
+.explain .fa-solid {
+  font-size: 30px;
+  color: grey;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explain .explain__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .selection {
-  background-color: #e1e0e5;
+  background-color: #f2eded;
 }
 
 .card img {

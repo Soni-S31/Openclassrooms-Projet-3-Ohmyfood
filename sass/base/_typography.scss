@@ -1,40 +1,52 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto:wght@300 & family= Shrikhand & display=swap");
 
 .search {
-  font-family: $font-text;
-  color: black;
+    font-family: $font-text;
+    color: black;
+}
+.explain {
+    text-decoration: none;
+
+    .explain__text,
+    .explain__numbers {
+        font-family: $font-text;
+        font-size: 23px;
+        color: black;
+    }
 }
 .card {
-  a {
-    text-decoration: none;
-  }
+    a {
+        text-decoration: none;
+    }
 
-  .card__tittle {
-    font-family: $font-text;
-    color: black;
-    font-size: 30px;
-  }
-  .card__description {
-    font-family: $font-text;
-    color: black;
-    font-size: 30px;
-    font-weight: 100;
-  }
-  .card__heart .fa-regular {
-    font-size: xx-large;
-    color: black;
-  }
+    .card__tittle {
+        font-family: $font-text;
+        color: black;
+        font-size: 30px;
+    }
+    .card__description {
+        font-family: $font-text;
+        color: black;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .card__heart .fa-regular {
+        font-size: xx-large;
+        color: black;
+    }
 }
 
-.selection__tittle {
-  font-family: $font-text;
+.selection__tittle,
+.working__tittle {
+    font-family: $font-text;
+    font-size: 35px;
 }
 .nav ul {
-  list-style-type: none;
+    list-style-type: none;
 
-  .nav__link {
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto";
-  }
+    .nav__link {
+        text-decoration: none;
+        color: black;
+        font-family: "Roboto";
+    }
 }

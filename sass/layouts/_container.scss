@@ -1,32 +1,110 @@
+.search__form {
+    @include display-row;
+    justify-content: center;
+    padding: $padding20;
+    background-color: $color-gray-f;
+    box-shadow: inset 0px 5px 5px -3px $color-gray-ff;
+    #searchcity {
+        font-size: 22px;
+        color: black;
+        width: 45%;
+        display: flex;
+        padding-left: 20px;
+        background-color: $color-gray-f;
+        border: none;
+    }
+    .city {
+        font-size: 22px;
+    }
+}
+.search2 {
+    background-color: $color-gray-l;
+    @include display-column;
+    align-items: center;
+    padding: 45px;
+
+    .search2__tittle {
+        display: inline-block;
+        text-align: center;
+        padding: 0px 50px;
+        font-size: 35px;
+        margin-block: 18px;
+    }
+    .search2__description {
+        display: inline-block;
+        text-align: center;
+        font-weight: 100;
+        font-size: 27px;
+        color: grey;
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+}
+
+.explain {
+    @include display-row;
+    background-color: $color-gray-l;
+    gap: 30px;
+    padding: 30px;
+    margin-left: 18px;
+    position: relative;
+    border-radius: 25px;
+
+    & :hover {
+        background: $color-primary;
+    }
+    .explain__numbers {
+        background: $color-primary;
+        border-radius: 100%;
+        color: $color-white;
+
+        padding: 5px 10px;
+        margin-block: 8px;
+        position: absolute;
+        left: -14px;
+    }
+    .fa-solid {
+        font-size: 30px;
+        color: grey;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .explain__text {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .selection {
-  background-color: $color-gray;
+    background-color: $color-gray;
 }
 
 .card img {
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card {
-  text-decoration: none;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-  background-color: $color-white;
-  border-radius: 20px;
-  .card__desc {
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
-    margin: 10px;
-    justify-content: space-between;
-  }
-  .card__heart {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: $color-white;
+    border-radius: 20px;
+    .card__desc {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-between;
+    }
+    .card__heart {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }

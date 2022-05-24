@@ -1,26 +1,25 @@
 body {
-  @include display-column;
-  max-width: 599px;
-  box-sizing: content-box;
-  margin: 0;
+    @include display-column;
+    max-width: 599px;
+    box-sizing: content-box;
+    margin: 0;
 }
 
 header,
 .working,
 .selection,
-.search,
 footer {
-  padding: 30px;
-}
-
-.search__form {
-  @include display-row;
-  justify-content: center;
+    padding: 30px;
 }
 header {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.working {
+    gap: 20px;
+    @include display-column;
 }
 .selection__card {
-  @include display-column;
+    @include display-column;
 }
