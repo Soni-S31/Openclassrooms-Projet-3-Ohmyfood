@@ -14,56 +14,8 @@ body {
 }
 
 header,
-.working,
-footer {
-  padding: 30px;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .working {
-  gap: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 60px;
-  margin-top: 20px;
-}
-
-.working .working__tittle {
-  margin-bottom: 15px;
-  margin-top: 0px;
-}
-
-.selection {
-  padding: 60px 30px;
-  background-color: rgba(246, 244, 244, 0.993);
-}
-
-.selection .selection__tittle {
-  padding-bottom: 8px;
-}
-
-.selection__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
+  padding: 30px;
 }
 
 .search {
@@ -376,5 +328,37 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+footer {
+  background: #393737;
+  padding: 30px 30px 30px 35px;
+}
+
+footer .logo {
+  width: 27%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.nav ul {
+  padding: 0px;
+  line-height: 35px;
+  padding-top: 19px;
+}
+
+.nav ul .fa-solid {
+  color: white;
+  padding: 10px 10px 10px 0px;
+}
+
+.nav ul .fa-utensils {
+  padding-right: 22px;
+}
+
+.nav ul .text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
 }
 /*# sourceMappingURL=main.css.map */

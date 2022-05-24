@@ -6,34 +6,6 @@ body {
 }
 
 header,
-.working,
-footer {
-    padding: 30px;
-}
-header {
-    display: flex;
-    justify-content: center;
-}
-
 .working {
-    gap: 35px;
-    @include display-column;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    .working__tittle {
-        margin-bottom: 15px;
-        margin-top: 0px;
-    }
-}
-
-.selection {
-    padding: 60px 30px;
-    background-color: $color-gray-l;
-    .selection__tittle {
-        padding-bottom: 8px;
-    }
-}
-.selection__card {
-    @include display-column;
-    gap: 15px;
+    padding: 30px;
 }
