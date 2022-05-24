@@ -19,15 +19,21 @@
         text-decoration: none;
     }
 
+    .card__image__new {
+        font-family: $font-text;
+        font-size: 20px;
+        color: hsl(165, 32%, 46%);
+    }
     .card__tittle {
         font-family: $font-text;
         color: black;
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: 600;
     }
     .card__description {
         font-family: $font-text;
         color: black;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 100;
     }
     .card__heart .fa-regular {
