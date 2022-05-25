@@ -136,3 +136,13 @@
         justify-content: flex-end;
     }
 }
+
+.meal__image {
+    width: 100%;
+    img {
+        object-fit: cover;
+    }
+}
+.meal__menu {
+    padding: 20px;
+}

@@ -5,4 +5,11 @@ header img {
 header {
     display: flex;
     justify-content: center;
+    position: relative;
+    .fa-solid {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 30px;
+    }
 }
