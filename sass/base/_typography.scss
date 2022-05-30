@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
 .search {
     font-family: $font-text;
@@ -55,15 +55,22 @@
         font-family: "Roboto";
     }
 }
-
-.meal__menu__tittle {
-    font-family: "shrikhand";
-    font-size: 50px;
-    font-weight: bolder;
+.menu__resto {
+    .menu__resto__tittle {
+        font-family: "shrikhand";
+        font-size: 40px;
+    }
+    .material-symbols-rounded {
+        font-size: 40px;
+    }
 }
 .menu__card {
     font-family: $font-text;
     .menu__card__tittle {
-        font-style: to-upper-case($string: "");
+        text-transform: uppercase;
+        border-bottom: 5px solid $color-tertiary;
+        width: 13%;
+        font-family: $font-text;
+        font-weight: bolder;
     }
 }

@@ -6,10 +6,10 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    align-items: center;
     .fa-solid {
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 30px;
         font-size: 30px;
     }
 }

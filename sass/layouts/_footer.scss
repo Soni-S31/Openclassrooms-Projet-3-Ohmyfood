@@ -1,8 +1,12 @@
 footer {
     background: hsl(0, 2%, 22%);
     padding: 30px 30px 30px 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
     .logo {
         width: 27%;
+        -webkit-filter: invert(1);
         filter: invert(1);
     }
 }

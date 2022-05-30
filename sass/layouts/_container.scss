@@ -92,6 +92,7 @@
 }
 
 .card img {
+    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
     max-height: 260px;
@@ -140,9 +141,31 @@
 .meal__image {
     width: 100%;
     img {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 }
-.meal__menu {
-    padding: 20px;
+.meal {
+    position: relative;
+    .menu {
+        padding: 30px;
+        border-radius: 60px 60px 0px 0px;
+        background-color: $color-gray-f;
+        opacity: 1;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        top: 330px;
+    }
+}
+.menu__resto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .material-symbols-rounded {
+        margin-right: 15px;
+    }
+}
+.menu__card__tittle {
+    padding-bottom: 10px;
 }
