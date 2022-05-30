@@ -4,6 +4,19 @@
 .search {
     font-family: $font-text;
     color: black;
+    .city {
+        font-size: 22px;
+    }
+    .search2__tittle {
+        text-align: center;
+        font-size: 35px;
+    }
+    .search2__description {
+        text-align: center;
+        font-weight: 100;
+        font-size: 27px;
+        color: grey;
+    }
 }
 .explain {
     text-decoration: none;
@@ -68,9 +81,20 @@
     font-family: $font-text;
     .menu__card__tittle {
         text-transform: uppercase;
-        border-bottom: 5px solid $color-tertiary;
-        width: 13%;
         font-family: $font-text;
-        font-weight: bolder;
+        font-weight: 300;
+    }
+
+    .plat__desc {
+        .plat__desc__tittle {
+            font-size: 28px;
+        }
+        .plat__desc__exp {
+            font-size: 25px;
+            font-weight: 200;
+        }
+    }
+    .plat__price {
+        font-size: 25px;
     }
 }

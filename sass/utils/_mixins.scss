@@ -1,16 +1,22 @@
 @mixin display-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 @mixin display-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 @mixin tittle($size: auto) {
-  font-family: $font-tittle;
-  font-size: $size;
+    font-family: $font-tittle;
+    font-size: $size;
 }
 @mixin texte($size: auto) {
-  font-family: $font-text;
-  font-size: $size;
+    font-family: $font-text;
+    font-size: $size;
+}
+
+@mixin center-flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
