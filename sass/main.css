@@ -115,20 +115,28 @@ header,
   font-weight: 300;
 }
 
+.menu__card .plat__desc {
+  width: 85%;
+}
+
 .menu__card .plat__desc .plat__desc__tittle {
-  font-size: 28px;
+  font-size: 27px;
 }
 
 .menu__card .plat__desc .plat__desc__exp {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__card .plat__price {
   font-size: 25px;
 }
 
-.search2__button {
+.search2__button,
+.menu__button {
   padding: 25px 35px;
   margin-block: 36px;
   font-size: 23px;
@@ -137,6 +145,11 @@ header,
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
   background: linear-gradient(#ff7ad9, #9256dc);
   border-radius: 40px;
+}
+
+.menu__button {
+  padding: 25px 75px;
+  margin-top: 0;
 }
 
 header img {
@@ -393,7 +406,7 @@ header .fa-solid {
 .meal .menu {
   padding: 30px;
   border-radius: 60px 60px 0px 0px;
-  background-color: #e7e4e4;
+  background-color: rgba(246, 244, 244, 0.993);
   opacity: 1;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -401,6 +414,16 @@ header .fa-solid {
   margin-top: -60px;
   z-index: 2;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__resto {
@@ -413,6 +436,7 @@ header .fa-solid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .menu__resto .material-symbols-rounded {
@@ -423,6 +447,7 @@ header .fa-solid {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 30px;
+  width: 95%;
 }
 
 .menu__card .menu__card__tittle {
@@ -445,6 +470,8 @@ header .fa-solid {
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 25px;
+  -webkit-box-shadow: -5px 5px 5px #e7e4e4;
+          box-shadow: -5px 5px 5px #e7e4e4;
 }
 
 .menu__card__plat .plat__desc__tittle {
@@ -453,6 +480,7 @@ header .fa-solid {
 
 .menu__card__plat .plat__desc__exp {
   margin: 10px;
+  width: 90%;
 }
 
 .plat__price {

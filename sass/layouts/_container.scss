@@ -140,19 +140,22 @@
     .menu {
         padding: 30px;
         border-radius: 60px 60px 0px 0px;
-        background-color: $color-gray-f;
+        background-color: $color-gray-l;
         opacity: 1;
         width: 100%;
         box-sizing: border-box;
         margin-top: -60px;
         z-index: 2;
         position: relative;
+        @include display-column;
+        align-items: center;
     }
 }
 .menu__resto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     .material-symbols-rounded {
         margin-right: 15px;
     }
@@ -161,6 +164,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 30px;
+    width: 95%;
     .menu__card__tittle {
         padding-bottom: 10px;
         border-bottom: 5px solid $color-tertiary;
@@ -174,6 +178,7 @@
         background-color: $color-white;
         border-radius: 20px;
         margin-bottom: 25px;
+        box-shadow: -5px 5px 5px $color-gray-f;
     }
 }
 
@@ -183,6 +188,7 @@
     }
     .plat__desc__exp {
         margin: 10px;
+        width: 90%;
     }
 }
 .plat__price {

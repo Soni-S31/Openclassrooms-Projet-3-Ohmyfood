@@ -1,4 +1,5 @@
-.search2__button {
+.search2__button,
+.menu__button {
     padding: 25px 35px;
     margin-block: 36px;
     font-size: 23px;
@@ -6,4 +7,9 @@
     border: none;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 40px;
+}
+
+.menu__button {
+    padding: 25px 75px;
+    margin-top: 0;
 }

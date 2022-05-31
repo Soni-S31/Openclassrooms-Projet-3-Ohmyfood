@@ -86,12 +86,16 @@
     }
 
     .plat__desc {
+        width: 85%;
         .plat__desc__tittle {
-            font-size: 28px;
+            font-size: 27px;
         }
         .plat__desc__exp {
-            font-size: 25px;
+            font-size: 23px;
             font-weight: 200;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     .plat__price {
