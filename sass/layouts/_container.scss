@@ -131,14 +131,14 @@
     width: 100%;
     opacity: 1;
     z-index: 1;
-    img {
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 390px;
 }
+
 .meal {
     .menu {
-        padding: 30px;
+        padding: 10px;
         border-radius: 60px 60px 0px 0px;
         background-color: $color-gray-l;
         opacity: 1;
@@ -156,14 +156,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    .menu__resto__tittle {
+        margin-left: 15px;
+    }
     .material-symbols-rounded {
         margin-right: 15px;
     }
 }
 .menu__card {
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
     width: 95%;
     .menu__card__tittle {
         padding-bottom: 10px;

@@ -149,7 +149,8 @@ header,
 
 .menu__button {
   padding: 25px 75px;
-  margin-top: 0;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 header img {
@@ -396,15 +397,13 @@ header .fa-solid {
   width: 100%;
   opacity: 1;
   z-index: 1;
-}
-
-.meal__image img {
   -o-object-fit: cover;
   object-fit: cover;
+  height: 390px;
 }
 
 .meal .menu {
-  padding: 30px;
+  padding: 10px;
   border-radius: 60px 60px 0px 0px;
   background-color: rgba(246, 244, 244, 0.993);
   opacity: 1;
@@ -439,14 +438,16 @@ header .fa-solid {
   width: 100%;
 }
 
+.menu__resto .menu__resto__tittle {
+  margin-left: 15px;
+}
+
 .menu__resto .material-symbols-rounded {
   margin-right: 15px;
 }
 
 .menu__card {
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 30px;
   width: 95%;
 }
 
