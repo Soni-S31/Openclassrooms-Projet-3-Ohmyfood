@@ -3,7 +3,7 @@
     justify-content: center;
     padding: 20px;
     background-color: $color-gray-f;
-    box-shadow: inset 0px 5px 5px -3px $color-gray-ff;
+    box-shadow: inset 0px 5px 5px -3px $color-gray-f;
     #searchcity {
         font-size: 22px;
         color: black;
@@ -15,7 +15,7 @@
     }
 }
 .search2 {
-    background-color: $color-gray-l;
+    background-color: $color-gray;
     @include display-column;
     align-items: center;
     padding: 45px;
@@ -43,12 +43,13 @@
 }
 .explain {
     @include display-row;
-    background-color: $color-gray-l;
+    background-color: $color-gray;
     gap: 30px;
     padding: 35px;
     margin-left: 18px;
     position: relative;
     border-radius: 25px;
+    box-shadow: $shadow;
     .explain__numbers {
         background: $color-primary;
         border-radius: 100%;
@@ -60,7 +61,8 @@
     }
     .fa-solid {
         font-size: 30px;
-        color: grey;
+        color: $color-gray-black;
+        opacity: calc(0.7);
         padding: 8px;
         display: flex;
         align-items: center;
@@ -72,7 +74,7 @@
 }
 .selection {
     padding: 60px 30px;
-    background-color: $color-gray-l;
+    background-color: $color-gray;
     .selection__tittle {
         padding-bottom: 8px;
     }
@@ -99,6 +101,7 @@
     margin-bottom: 20px;
     background-color: $color-white;
     border-radius: 20px;
+    box-shadow: $shadow;
     .card__image {
         position: relative;
         .card__image__new {
@@ -140,7 +143,7 @@
     .menu {
         padding: 10px;
         border-radius: 60px 60px 0px 0px;
-        background-color: $color-gray-l;
+        background-color: $color-gray;
         opacity: 1;
         width: 100%;
         box-sizing: border-box;
@@ -179,7 +182,7 @@
         background-color: $color-white;
         border-radius: 20px;
         margin-bottom: 25px;
-        box-shadow: -5px 5px 5px $color-gray-f;
+        box-shadow: $shadow;
     }
 }
 

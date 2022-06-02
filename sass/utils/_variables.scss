@@ -5,7 +5,11 @@ $color-primary: hsl(267, 66%, 60%);
 $color-secondary: hsl(317, 100%, 74%);
 $color-tertiary: hsl(165, 56%, 74%);
 $color-white: #fff;
-$color-gray-f: hsla(0, 6%, 90%, 1);
-$color-gray: hsl(0, 16%, 94%);
-$color-gray-ff: hsla(0, 3%, 76%, 0.918);
-$color-gray-l: hsla(0, 10%, 96%, 0.993);
+$color-gray-f: hsla(0, 0%, 92%, 1);
+$color-gray: hsla(0, 0%, 96%, 1);
+$color-gray-black: hsla(0, 1%, 21%, 1);
+
+$color-magnolia: hsla(267, 100%, 96%, 1);
+
+$shadow: -5px 5px 5px $color-gray;
+$shadow-I: -5px 5px 5px $color-gray-f;

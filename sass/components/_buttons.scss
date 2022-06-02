@@ -1,12 +1,16 @@
-.search2__button,
+.btn,
 .menu__button {
     padding: 25px 35px;
     margin-block: 36px;
     font-size: 23px;
     color: $color-white;
     border: none;
-    background: linear-gradient($color-secondary, $color-primary);
+    @include gradient;
     border-radius: 40px;
+    box-shadow: $shadow;
+    &:hover {
+        @include btn-hover;
+    }
 }
 
 .menu__button {

@@ -135,7 +135,7 @@ header,
   font-size: 25px;
 }
 
-.search2__button,
+.btn,
 .menu__button {
   padding: 25px 35px;
   margin-block: 36px;
@@ -145,6 +145,15 @@ header,
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
   background: linear-gradient(#ff7ad9, #9256dc);
   border-radius: 40px;
+  -webkit-box-shadow: -5px 5px 5px whitesmoke;
+          box-shadow: -5px 5px 5px whitesmoke;
+}
+
+.btn:hover,
+.menu__button:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: -5px 5px 5px #ebebeb;
+          box-shadow: -5px 5px 5px #ebebeb;
 }
 
 .menu__button {
@@ -174,6 +183,8 @@ header .fa-solid {
   position: absolute;
   left: 30px;
   font-size: 30px;
+  text-decoration: none;
+  color: black;
 }
 
 .search__form {
@@ -188,9 +199,9 @@ header .fa-solid {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
-  background-color: #e7e4e4;
-  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(196, 192, 192, 0.918);
-          box-shadow: inset 0px 5px 5px -3px rgba(196, 192, 192, 0.918);
+  background-color: #ebebeb;
+  -webkit-box-shadow: inset 0px 5px 5px -3px #ebebeb;
+          box-shadow: inset 0px 5px 5px -3px #ebebeb;
 }
 
 .search__form #searchcity {
@@ -201,12 +212,12 @@ header .fa-solid {
   display: -ms-flexbox;
   display: flex;
   padding-left: 20px;
-  background-color: #e7e4e4;
+  background-color: #ebebeb;
   border: none;
 }
 
 .search2 {
-  background-color: rgba(246, 244, 244, 0.993);
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,12 +269,14 @@ header .fa-solid {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: rgba(246, 244, 244, 0.993);
+  background-color: whitesmoke;
   gap: 30px;
   padding: 35px;
   margin-left: 18px;
   position: relative;
   border-radius: 25px;
+  -webkit-box-shadow: -5px 5px 5px whitesmoke;
+          box-shadow: -5px 5px 5px whitesmoke;
 }
 
 .explain .explain__numbers {
@@ -278,7 +291,8 @@ header .fa-solid {
 
 .explain .fa-solid {
   font-size: 30px;
-  color: grey;
+  color: #363535;
+  opacity: calc(0.7);
   padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,7 +313,7 @@ header .fa-solid {
 
 .selection {
   padding: 60px 30px;
-  background-color: rgba(246, 244, 244, 0.993);
+  background-color: whitesmoke;
 }
 
 .selection .selection__tittle {
@@ -343,6 +357,8 @@ header .fa-solid {
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 20px;
+  -webkit-box-shadow: -5px 5px 5px whitesmoke;
+          box-shadow: -5px 5px 5px whitesmoke;
 }
 
 .card .card__image {
@@ -405,7 +421,7 @@ header .fa-solid {
 .meal .menu {
   padding: 10px;
   border-radius: 60px 60px 0px 0px;
-  background-color: rgba(246, 244, 244, 0.993);
+  background-color: whitesmoke;
   opacity: 1;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -471,8 +487,8 @@ header .fa-solid {
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 25px;
-  -webkit-box-shadow: -5px 5px 5px #e7e4e4;
-          box-shadow: -5px 5px 5px #e7e4e4;
+  -webkit-box-shadow: -5px 5px 5px whitesmoke;
+          box-shadow: -5px 5px 5px whitesmoke;
 }
 
 .menu__card__plat .plat__desc__tittle {
@@ -489,7 +505,7 @@ header .fa-solid {
 }
 
 footer {
-  background: #393737;
+  background: #363535;
   padding: 30px 30px 30px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
