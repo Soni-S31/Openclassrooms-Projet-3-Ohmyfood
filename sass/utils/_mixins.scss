@@ -37,3 +37,9 @@
         background-color: $color-magnolia;
     }
 }
+@mixin heart {
+    background: linear-gradient($color-primary, $color-secondary);
+
+    color: transparent;
+    border: none;
+}

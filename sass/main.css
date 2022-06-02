@@ -292,7 +292,7 @@ header .fa-solid {
   background: #9256dc;
   border-radius: 100%;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 12px;
   margin-block: 8px;
   position: absolute;
   left: -14px;
@@ -512,6 +512,13 @@ header .fa-solid {
 
 .plat__price {
   margin: 10px;
+}
+
+.card__heart :hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff7ad9));
+  background: linear-gradient(#9256dc, #ff7ad9);
+  color: transparent;
+  border: none;
 }
 
 footer {

@@ -1,2 +1,5 @@
-
-
+.card__heart {
+    & :hover {
+        @include heart;
+    }
+}
