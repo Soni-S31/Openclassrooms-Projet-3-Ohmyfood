@@ -29,3 +29,11 @@
     opacity: 0.85;
     box-shadow: $shadow-I;
 }
+
+@mixin explain-hover {
+    background-color: $color-magnolia;
+    & .fa-solid {
+        color: $color-primary;
+        background-color: $color-magnolia;
+    }
+}
