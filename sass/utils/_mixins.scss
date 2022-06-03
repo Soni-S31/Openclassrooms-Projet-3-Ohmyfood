@@ -41,13 +41,7 @@
     background-image: $color-gradient;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    border: none;
     font-weight: bold;
-}
-@mixin heart-empty {
-    background-image: white;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: black;
-    font-weight: 100;
 }

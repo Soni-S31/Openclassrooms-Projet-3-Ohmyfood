@@ -509,22 +509,43 @@ header .fa-solid {
   margin: 10px;
 }
 
-.fa-heart {
+.card__heart {
   font-size: xx-large;
-  background-image: white;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: black;
-  font-weight: 100;
 }
 
-.fa-heart:hover {
+.card__heart .full {
+  opacity: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff7ad9));
   background-image: linear-gradient(#9256dc, #ff7ad9);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  border: none;
   font-weight: bold;
+  position: absolute;
+}
+
+.card__heart :hover {
+  -webkit-animation: heart 3s ease both;
+  animation: heart 2s ease both;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {
