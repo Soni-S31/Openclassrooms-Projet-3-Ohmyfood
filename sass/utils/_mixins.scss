@@ -37,9 +37,17 @@
         background-color: $color-magnolia;
     }
 }
-@mixin heart {
-    background: linear-gradient($color-primary, $color-secondary);
-
-    color: transparent;
-    border: none;
+@mixin heart-full {
+    background-image: $color-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+@mixin heart-empty {
+    background-image: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: black;
+    font-weight: 100;
 }

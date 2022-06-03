@@ -75,11 +75,6 @@ header,
   font-weight: 100;
 }
 
-.card .card__heart .fa-regular {
-  font-size: xx-large;
-  color: black;
-}
-
 .selection__tittle,
 .working__tittle {
   font-family: "Roboto", sans-serif;
@@ -514,11 +509,22 @@ header .fa-solid {
   margin: 10px;
 }
 
-.card__heart :hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff7ad9));
-  background: linear-gradient(#9256dc, #ff7ad9);
-  color: transparent;
-  border: none;
+.fa-heart {
+  font-size: xx-large;
+  background-image: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: black;
+  font-weight: 100;
+}
+
+.fa-heart:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff7ad9));
+  background-image: linear-gradient(#9256dc, #ff7ad9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 footer {

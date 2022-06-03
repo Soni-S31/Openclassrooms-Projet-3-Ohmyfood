@@ -1,5 +1,8 @@
-.card__heart {
-    & :hover {
-        @include heart;
+.fa-heart {
+    font-size: xx-large;
+    @include heart-empty;
+
+    &:hover {
+        @include heart-full;
     }
 }
