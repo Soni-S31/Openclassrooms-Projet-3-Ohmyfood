@@ -10,7 +10,11 @@ $color-gray-ff: hsla(0, 0%, 91%, 1);
 $color-gray: hsla(0, 0%, 96%, 1);
 $color-gray-black: hsla(0, 1%, 21%, 1);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
-
+$color-gradient3: linear-gradient(
+    $color-primary,
+    $color-secondary,
+    $color-tertiary
+);
 $color-magnolia: hsla(267, 100%, 96%, 1);
 
 $shadow: -5px 5px 5px $color-gray;

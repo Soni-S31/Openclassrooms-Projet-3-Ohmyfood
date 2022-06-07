@@ -6,9 +6,9 @@
     box-shadow: inset 0px 5px 5px -3px $color-gray-f;
     #searchcity {
         font-size: 22px;
+        text-align: center;
         color: black;
-        width: 45%;
-        display: flex;
+        width: 55%;
         padding-left: 20px;
         background-color: $color-gray-f;
         border: none;
@@ -18,7 +18,7 @@
     background-color: $color-gray;
     @include display-column;
     align-items: center;
-    padding: 45px;
+    padding: 40px;
 
     .search2__tittle {
         display: inline-block;
