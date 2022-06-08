@@ -205,3 +205,51 @@
 .plat__price {
     margin: 10px;
 }
+
+/* slide menu*/
+/*.menu {
+    .entrees {
+        .menu__card__plat {
+            -webkit-animation: slide 1500ms 1000ms both;
+            animation: slide 1500ms 1000ms both;
+        }
+    }
+    .principal {
+        .menu__card__plat {
+            -webkit-animation: slide 1500ms 1500ms both;
+            animation: slide 1500ms 1500ms both;
+        }
+    }
+    .desserts {
+        .menu__card__tittle .menu__card__plat {
+            -webkit-animation: slide 1500ms 2000ms both;
+            animation: slide 1500ms 2000ms both;
+        }
+    }
+}*/
+/*.menu__card__tittle {
+    
+    animation: slide 1500ms 2000ms forwards;
+}*/
+
+/*.menu__card__plat {
+    -webkit-animation-name: slide;
+    animation-name: slide;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}*/
+.menu__card__plat {
+    -webkit-animation-name: slide;
+    animation-name: slide;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
