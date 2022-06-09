@@ -28,3 +28,36 @@
         }
     }
 }
+
+.menu__heart {
+    @include center-flex-end;
+    margin-right: 20px;
+
+    .full {
+        opacity: 0;
+        @include heart-full;
+        position: absolute;
+    }
+    & :hover {
+        -webkit-animation: heart 3s ease both;
+        animation: heart 2s ease both;
+
+        @-webkit-keyframes heart {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes heart {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -101,7 +101,7 @@ header,
   font-size: 40px;
 }
 
-.menu__resto .material-symbols-rounded {
+.menu__resto .menu__heart {
   font-size: 40px;
 }
 
@@ -163,43 +163,6 @@ header,
   margin-bottom: 80px;
 }
 
-/* btn selection plat*/
-/*.btn__plat {
-    background: $color-tertiary;
-    padding: 0;
-    right: 0;
-    width: 15%;
-    border-radius: 0px 20px 20px 0px;
-    height: 100%;
-    position: absolute;
-    border: none;
-    bottom: 0;
-    opacity: 0;
-    &:hover {
-        -webkit-animation-name: btn-check;
-        animation-name: btn-check;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        cursor: pointer;
-    }
-    .fa-check {
-        color: $color-tertiary;
-        height: auto;
-        font-size: 25px;
-        background-color: $color-white;
-        border-radius: 50%;
-        padding: 3px 5px 3px 5px;
-        &:hover {
-            -webkit-animation: check 600ms linear 1 forwards;
-            animation: check 600ms linear 1 forwards;
-        }
-    }
-}
-*/
 header img {
   width: 50%;
 }
@@ -681,6 +644,54 @@ header .fa-solid {
 }
 
 .card__heart :hover {
+  -webkit-animation: heart 3s ease both;
+  animation: heart 2s ease both;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.menu__heart .full {
+  opacity: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9256dc), to(#ff7ad9));
+  background-image: linear-gradient(#9256dc, #ff7ad9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+}
+
+.menu__heart :hover {
   -webkit-animation: heart 3s ease both;
   animation: heart 2s ease both;
 }
