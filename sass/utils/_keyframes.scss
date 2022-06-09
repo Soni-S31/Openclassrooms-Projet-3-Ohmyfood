@@ -1,3 +1,4 @@
+/* slide plat */
 @-webkit-keyframes slide {
     0% {
         transform: translateY(40%);
@@ -18,5 +19,61 @@
     100% {
         transform: translateY(10%);
         opacity: 1;
+    }
+}
+
+/* btn check */
+@-webkit-keyframes btn-check {
+    0% {
+        transform: translateX(-40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes btn-check {
+    0% {
+        transform: translateX(40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes check {
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes check {
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes price {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+@keyframes price {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-125%);
     }
 }
