@@ -188,6 +188,7 @@ header .fa-solid {
   color: black;
 }
 
+/* section Recherche Accueil*/
 .search__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +243,7 @@ header .fa-solid {
   margin-bottom: 10px;
 }
 
+/* aside Fonctionnement Accueil*/
 .working {
   gap: 35px;
   display: -webkit-box;
@@ -320,6 +322,7 @@ header .fa-solid {
           align-items: center;
 }
 
+/* Article Restaurants Accueil */
 .selection {
   padding: 60px 30px;
   background-color: whitesmoke;
@@ -398,6 +401,10 @@ header .fa-solid {
           justify-content: space-between;
 }
 
+.card .card__desc a {
+  width: 100%;
+}
+
 .card .card__desc .card__tittle {
   margin-bottom: 0px;
 }
@@ -418,6 +425,7 @@ header .fa-solid {
           justify-content: flex-end;
 }
 
+/* menu pages resto */
 .meal__image {
   width: 100%;
   opacity: 1;
@@ -427,7 +435,6 @@ header .fa-solid {
   height: 390px;
 }
 
-/* menu pages resto */
 .meal .menu {
   padding: 10px;
   border-radius: 60px 60px 0px 0px;
@@ -468,7 +475,7 @@ header .fa-solid {
   margin-left: 15px;
 }
 
-.menu__resto .material-symbols-rounded {
+.menu__resto .menu__heart {
   margin-right: 15px;
 }
 

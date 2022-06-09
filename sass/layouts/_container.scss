@@ -1,3 +1,4 @@
+/* section Recherche Accueil*/
 .search__form {
     @include display-row;
     justify-content: center;
@@ -31,6 +32,7 @@
         margin-bottom: 10px;
     }
 }
+/* aside Fonctionnement Accueil*/
 .working {
     gap: 35px;
     @include display-column;
@@ -78,7 +80,7 @@
         align-items: center;
     }
 }
-
+/* Article Restaurants Accueil */
 .selection {
     padding: 60px 30px;
     background-color: $color-gray;
@@ -125,6 +127,9 @@
         margin-left: 20px;
         margin-right: 20px;
         justify-content: space-between;
+        a {
+            width: 100%;
+        }
         .card__tittle {
             margin-bottom: 0px;
         }
@@ -136,7 +141,7 @@
         @include center-flex-end;
     }
 }
-
+/* menu pages resto */
 .meal__image {
     width: 100%;
     opacity: 1;
@@ -145,7 +150,7 @@
     object-fit: cover;
     height: 390px;
 }
-/* menu pages resto */
+
 .meal {
     .menu {
         padding: 10px;
@@ -169,7 +174,7 @@
     .menu__resto__tittle {
         margin-left: 15px;
     }
-    .material-symbols-rounded {
+    .menu__heart {
         margin-right: 15px;
     }
 }
