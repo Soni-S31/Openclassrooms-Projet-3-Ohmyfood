@@ -200,7 +200,7 @@
 
 .menu__card__plat {
     .plat__desc {
-        width: 75%;
+        width: 90%;
         .plat__desc__tittle {
             margin: 10px;
         }
@@ -211,7 +211,9 @@
     }
 }
 .plat__price {
-    margin: 10px;
+    margin: 10px 0px;
+    right: 5%;
+    position: absolute;
 }
 
 /* slide plat */
@@ -309,6 +311,9 @@
                 animation: check 600ms ease-in 1 forwards;
                 cursor: pointer;
             }
+        }
+        .plat__desc {
+            width: 70%;
         }
         .plat__price {
             -webkit-animation: price 600ms linear forwards;
