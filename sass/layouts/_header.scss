@@ -1,5 +1,8 @@
 header img {
     width: 50%;
+    @include desktop {
+        width: 30%;
+    }
 }
 
 header {

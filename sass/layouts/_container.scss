@@ -56,13 +56,22 @@
         margin: 10px;
         justify-content: flex-start;
         padding: 20px;
-        gap: 50px;
+        gap: 25px;
     }
     .working__tittle {
         margin-bottom: 15px;
         margin-top: 0px;
     }
 }
+.working__explain {
+    @include display-column;
+    gap: 35px;
+    @include desktop {
+        @include display-row;
+        justify-content: space-between;
+    }
+}
+
 .explain {
     @include display-row;
     background-color: $color-gray;
@@ -72,6 +81,14 @@
     position: relative;
     border-radius: 25px;
     box-shadow: $shadow-explain;
+    align-items: center;
+    @include tablette {
+        padding: 15px;
+        gap: 10px;
+    }
+    @include desktop {
+        width: 25%;
+    }
     &:hover {
         @include explain-hover;
     }
@@ -107,14 +124,14 @@
     .selection__tittle {
         padding-bottom: 8px;
         @include desktop {
-            margin: 10px;
+            margin: 20px;
         }
     }
     @include desktop {
         @include display-column;
-        width: 70%;
         padding: 20px;
         border-radius: 20px;
+        margin-top: 20px;
     }
 }
 .selection__card {
@@ -123,8 +140,8 @@
     @include desktop {
         @include display-row;
         flex-wrap: wrap;
-        gap: 15px;
-        margin: 10px;
+        gap: 20px;
+        margin: 20px;
         justify-content: space-between;
     }
 }
@@ -138,7 +155,7 @@
     @include desktop {
         -o-object-fit: cover;
         object-fit: cover;
-        max-height: 180px;
+        max-height: 250px;
     }
 }
 

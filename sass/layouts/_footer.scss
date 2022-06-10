@@ -14,6 +14,12 @@ footer {
     padding: 0px;
     line-height: 35px;
     padding-top: 19px;
+    @include tablette {
+        display: flex;
+        gap: 45px;
+        align-items: center;
+        justify-content: space-around;
+    }
     .fa-solid {
         color: white;
         padding: 10px 10px 10px 0px;
