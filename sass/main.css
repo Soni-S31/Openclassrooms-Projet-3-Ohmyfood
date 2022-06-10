@@ -44,8 +44,7 @@ header,
 
 @media screen and (min-width: 993px) {
   .search {
-    margin: 10px;
-    border-radius: 5px;
+    margin: 20px;
   }
 }
 
@@ -59,7 +58,7 @@ header,
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 10px;
-    margin: 10px;
+    margin: 20px;
   }
 }
 
@@ -303,6 +302,7 @@ header .fa-solid {
   .search2 {
     background-color: #ebebeb;
     border-radius: 0px 0px 20px 20px;
+    padding: 10px;
   }
 }
 
@@ -339,6 +339,7 @@ header .fa-solid {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 20px;
+    gap: 50px;
   }
 }
 
