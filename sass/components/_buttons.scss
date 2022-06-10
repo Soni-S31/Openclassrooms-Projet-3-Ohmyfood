@@ -18,3 +18,9 @@
     margin-top: 50px;
     margin-bottom: 80px;
 }
+
+.btn--desc {
+    @include desktop {
+        margin-block: 20px;
+    }
+}

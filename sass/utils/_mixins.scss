@@ -45,3 +45,16 @@
     border: none;
     font-weight: bold;
 }
+
+/* Mixin breakpoint*/
+@mixin tablette {
+    @media screen and (min-width: map-get($breakpoints,tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints,desktop)) {
+        @content;
+    }
+}

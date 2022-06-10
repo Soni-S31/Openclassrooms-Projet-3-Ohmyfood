@@ -1,3 +1,4 @@
+/* Mixin breakpoint*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 body {
@@ -8,7 +9,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 599px;
+  width: 100%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0;
@@ -19,9 +20,47 @@ body {
   background: #ffffff;
 }
 
+@media screen and (min-width: 600px) {
+  body {
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  body {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
 header,
 .working {
   padding: 30px;
+}
+
+@media screen and (min-width: 993px) {
+  .search {
+    margin: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+  }
 }
 
 /* section de recheche acceuil*/
@@ -101,7 +140,9 @@ header,
 /* Menu pages Resto */
 .menu__resto .menu__resto__tittle {
   font-family: "shrikhand";
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: clamp(35px, 5vw, 50px);
+  /*font-size responsavie)*/
 }
 
 .menu__resto .menu__heart {
@@ -138,7 +179,9 @@ header,
 }
 
 .menu__card .plat__price {
-  font-size: 25px;
+  /*font-size: 25px;*/
+  font-size: clamp(18px, 5vw, 27px);
+  /*font-size responsavie)*/
 }
 
 .btn,
@@ -166,6 +209,12 @@ header,
   padding: 25px 75px;
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+@media screen and (min-width: 993px) {
+  .btn--desc {
+    margin-block: 20px;
+  }
 }
 
 header img {
@@ -211,6 +260,13 @@ header .fa-solid {
           box-shadow: inset 0px 5px 5px -3px #ebebeb;
 }
 
+@media screen and (min-width: 993px) {
+  .search__form {
+    background: whitesmoke;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+
 .search__form #searchcity {
   font-size: 22px;
   text-align: center;
@@ -219,6 +275,13 @@ header .fa-solid {
   padding-left: 20px;
   background-color: #ebebeb;
   border: none;
+}
+
+@media screen and (min-width: 993px) {
+  .search__form #searchcity {
+    background-color: whitesmoke;
+    width: auto;
+  }
 }
 
 .search2 {
@@ -234,6 +297,13 @@ header .fa-solid {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
+}
+
+@media screen and (min-width: 993px) {
+  .search2 {
+    background-color: #ebebeb;
+    border-radius: 0px 0px 20px 20px;
+  }
 }
 
 .search2 .search2__tittle {
@@ -260,6 +330,16 @@ header .fa-solid {
           flex-direction: column;
   margin-bottom: 60px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 993px) {
+  .working {
+    margin: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px;
+  }
 }
 
 .working .working__tittle {
@@ -337,6 +417,27 @@ header .fa-solid {
   padding-bottom: 8px;
 }
 
+@media screen and (min-width: 993px) {
+  .selection .selection__tittle {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
 .selection__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,12 +449,39 @@ header .fa-solid {
   gap: 15px;
 }
 
+@media screen and (min-width: 993px) {
+  .selection__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .card img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   max-height: 260px;
   border-radius: 20px 20px 0px 0px;
+}
+
+@media screen and (min-width: 993px) {
+  .card img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 180px;
+  }
 }
 
 .card {
@@ -376,6 +504,12 @@ header .fa-solid {
   border-radius: 20px;
   -webkit-box-shadow: -5px 5px 5px whitesmoke;
           box-shadow: -5px 5px 5px whitesmoke;
+}
+
+@media screen and (min-width: 993px) {
+  .card {
+    width: 47%;
+  }
 }
 
 .card .card__image {
@@ -474,6 +608,7 @@ header .fa-solid {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  gap: 2%;
 }
 
 .menu__resto .menu__resto__tittle {
@@ -514,7 +649,7 @@ header .fa-solid {
 }
 
 .menu__card__plat .plat__desc {
-  width: 90%;
+  width: 85%;
 }
 
 .menu__card__plat .plat__desc .plat__desc__tittle {
@@ -528,8 +663,8 @@ header .fa-solid {
 
 .plat__price {
   margin: 10px 0px;
-  right: 5%;
-  position: absolute;
+  right: 7%;
+  position: relative;
 }
 
 /* slide plat */
@@ -792,10 +927,23 @@ footer .logo {
   animation: fade-out 3s ease-out forwards;
   background-color: #fff;
   width: 100%;
-  max-width: 599px;
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 .loading {

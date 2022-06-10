@@ -20,3 +20,9 @@ $color-magnolia: hsla(267, 100%, 96%, 1);
 $shadow: -5px 5px 5px $color-gray;
 $shadow-I: -5px 5px 5px $color-gray-black;
 $shadow-explain: -5px 5px 20px 2px $color-gray-ff;
+
+$breakpoints: (
+    tablette: 600px,
+    desktop: 993px,
+    /*min widht*/
+);

@@ -1,6 +1,6 @@
 body {
     @include display-column;
-    max-width: 599px;
+    width: 100%;
     box-sizing: content-box;
     margin: 0;
     padding: 0;
@@ -8,9 +8,32 @@ body {
     width: 100%;
     height: 100vh;
     background: #ffffff;
+    @include tablette {
+        width: 100%;
+        align-content: center;
+
+        margin: 0;
+        padding: 0;
+    }
+    @include desktop {
+        align-content: center;
+    }
 }
 
 header,
 .working {
     padding: 30px;
+}
+
+.search {
+    @include desktop {
+        margin: 10px;
+    }
+}
+main {
+    @include desktop {
+        @include display-row;
+        gap: 10px;
+        margin: 10px;
+    }
 }

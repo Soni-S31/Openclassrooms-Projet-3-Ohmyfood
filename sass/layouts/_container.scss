@@ -5,6 +5,10 @@
     padding: 20px;
     background-color: $color-gray-f;
     box-shadow: inset 0px 5px 5px -3px $color-gray-f;
+    @include desktop {
+        background: $color-gray;
+        border-radius: 20px 20px 0px 0px;
+    }
     #searchcity {
         font-size: 22px;
         text-align: center;
@@ -13,6 +17,10 @@
         padding-left: 20px;
         background-color: $color-gray-f;
         border: none;
+        @include desktop {
+            background-color: $color-gray;
+            width: auto;
+        }
     }
 }
 .search2 {
@@ -20,6 +28,10 @@
     @include display-column;
     align-items: center;
     padding: 40px;
+    @include desktop {
+        background-color: $color-gray-f;
+        border-radius: 0px 0px 20px 20px;
+    }
 
     .search2__tittle {
         display: inline-block;
@@ -32,12 +44,18 @@
         margin-bottom: 10px;
     }
 }
+
 /* aside Fonctionnement Accueil*/
 .working {
     gap: 35px;
     @include display-column;
     margin-bottom: 60px;
     margin-top: 20px;
+    @include desktop {
+        margin: 10px;
+        justify-content: flex-start;
+        padding: 20px;
+    }
     .working__tittle {
         margin-bottom: 15px;
         margin-top: 0px;
@@ -86,11 +104,27 @@
     background-color: $color-gray;
     .selection__tittle {
         padding-bottom: 8px;
+        @include desktop {
+            margin: 10px;
+        }
+    }
+    @include desktop {
+        @include display-column;
+        width: 70%;
+        padding: 20px;
+        border-radius: 20px;
     }
 }
 .selection__card {
     @include display-column;
     gap: 15px;
+    @include desktop {
+        @include display-row;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px;
+        justify-content: space-between;
+    }
 }
 
 .card img {
@@ -99,6 +133,11 @@
     width: 100%;
     max-height: 260px;
     border-radius: 20px 20px 0px 0px;
+    @include desktop {
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-height: 180px;
+    }
 }
 
 .card {
@@ -111,6 +150,9 @@
     background-color: $color-white;
     border-radius: 20px;
     box-shadow: $shadow;
+    @include desktop {
+        width: 47%;
+    }
     .card__image {
         position: relative;
         .card__image__new {
@@ -171,6 +213,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 2%;
     .menu__resto__tittle {
         margin-left: 15px;
     }
@@ -200,7 +243,7 @@
 
 .menu__card__plat {
     .plat__desc {
-        width: 90%;
+        width: 85%;
         .plat__desc__tittle {
             margin: 10px;
         }
@@ -212,8 +255,8 @@
 }
 .plat__price {
     margin: 10px 0px;
-    right: 5%;
-    position: absolute;
+    right: 7%;
+    position: relative;
 }
 
 /* slide plat */
