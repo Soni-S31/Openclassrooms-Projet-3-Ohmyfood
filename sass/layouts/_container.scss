@@ -27,7 +27,7 @@
     background-color: $color-gray;
     @include display-column;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
     @include desktop {
         background-color: $color-gray-f;
         border-radius: 0px 0px 20px 20px;
@@ -75,8 +75,8 @@
 .explain {
     @include display-row;
     background-color: $color-gray;
-    gap: 30px;
-    padding: 35px;
+    gap: 25px;
+    padding: 25px;
     margin-left: 18px;
     position: relative;
     border-radius: 25px;
@@ -111,6 +111,7 @@
         display: flex;
         align-items: center;
         box-shadow: none;
+        justify-content: center;
     }
     .explain__text {
         display: flex;
@@ -131,7 +132,7 @@
         @include display-column;
         padding: 20px;
         border-radius: 20px;
-        margin-top: 20px;
+        margin: 20px;
     }
 }
 .selection__card {
@@ -243,10 +244,11 @@
 .menu__card {
     margin-top: 20px;
     width: 95%;
+    margin-right: 10px;
     .menu__card__tittle {
         padding-bottom: 10px;
         border-bottom: 5px solid $color-tertiary;
-        width: 13%;
+        width: 50px;
     }
     .menu__card__plat {
         display: flex;
@@ -274,10 +276,17 @@
 }
 .plat__price {
     margin: 10px 0px;
-    right: 7%;
+    right: 20px;
     position: relative;
 }
 
+.menu__card--flex {
+    @include desktop {
+        width: 80%;
+        @include display-column;
+        margin: auto;
+    }
+}
 /* slide plat */
 .menu__card__plat--1 {
     margin-top: 20px;
@@ -339,13 +348,16 @@
         background: $color-tertiary;
         padding: 0;
         right: 0;
-        width: 15%;
+        width: 50px;
         border-radius: 0px 20px 20px 0px;
         height: 100%;
         position: absolute;
         border: none;
         bottom: 0;
         opacity: 0;
+        @include tablette {
+            width: 70px;
+        }
         .fa-check {
             opacity: 0;
             color: $color-tertiary;
@@ -380,6 +392,14 @@
         .plat__price {
             -webkit-animation: price 600ms linear forwards;
             animation: price 600ms linear forwards;
+            @include tablette {
+                -webkit-animation: price-tablette 600ms linear forwards;
+                animation: price-tablette 600ms linear forwards;
+            }
+            @include desktop {
+                -webkit-animation: price-desktop 600ms linear forwards;
+                animation: price-desktop 600ms linear forwards;
+            }
         }
     }
 }

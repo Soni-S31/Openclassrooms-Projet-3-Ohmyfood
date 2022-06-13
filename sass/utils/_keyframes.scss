@@ -65,7 +65,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-125%);
+        transform: translateX(-50%);
     }
 }
 
@@ -74,6 +74,40 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-125%);
+        transform: translateX(-50%);
+    }
+}
+@-webkit-keyframes price-desktop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes price-desktop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes price-tablette {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes price-tablette {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }

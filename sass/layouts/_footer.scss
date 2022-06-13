@@ -4,21 +4,27 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
+
+    @include tablette {
+        padding: 40px;
+    }
     .logo {
-        width: 27%;
+        width: 35%;
         -webkit-filter: invert(1);
         filter: invert(1);
+        @include desktop {
+            width: 20%;
+        }
     }
 }
 .nav ul {
     padding: 0px;
     line-height: 35px;
     padding-top: 19px;
-    @include tablette {
+    @include desktop {
         display: flex;
         gap: 45px;
         align-items: center;
-        justify-content: space-around;
     }
     .fa-solid {
         color: white;

@@ -39,8 +39,6 @@ body {
 header,
 .working {
   padding: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -78,13 +76,13 @@ main {
 
 .search .search2__tittle {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .search .search2__description {
   text-align: center;
   font-weight: 100;
-  font-size: 27px;
+  font-size: 25px;
   color: grey;
 }
 
@@ -95,14 +93,14 @@ main {
 .explain .explain__text,
 .explain .explain__numbers {
   font-family: "Roboto", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   color: black;
 }
 
 .selection__tittle,
 .working__tittle {
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 /* card Accueil*/
@@ -119,14 +117,14 @@ main {
 .card .card__tittle {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
 }
 
 .card .card__description {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 100;
 }
 
@@ -246,6 +244,7 @@ header {
 header .fa-solid {
   position: absolute;
   left: 30px;
+  top: 40px;
   font-size: 30px;
   text-decoration: none;
   color: black;
@@ -305,7 +304,7 @@ header .fa-solid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -393,8 +392,8 @@ header .fa-solid {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: whitesmoke;
-  gap: 30px;
-  padding: 35px;
+  gap: 25px;
+  padding: 25px;
   margin-left: 18px;
   position: relative;
   border-radius: 25px;
@@ -449,6 +448,9 @@ header .fa-solid {
           align-items: center;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .explain .explain__text {
@@ -487,7 +489,7 @@ header .fa-solid {
             flex-direction: column;
     padding: 20px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin: 20px;
   }
 }
 
@@ -675,12 +677,13 @@ header .fa-solid {
 .menu__card {
   margin-top: 20px;
   width: 95%;
+  margin-right: 10px;
 }
 
 .menu__card .menu__card__tittle {
   padding-bottom: 10px;
   border-bottom: 5px solid #98e2cf;
-  width: 13%;
+  width: 50px;
 }
 
 .menu__card .menu__card__plat {
@@ -716,8 +719,22 @@ header .fa-solid {
 
 .plat__price {
   margin: 10px 0px;
-  right: 7%;
+  right: 20px;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .menu__card--flex {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
 }
 
 /* slide plat */
@@ -783,13 +800,19 @@ header .fa-solid {
   background: #98e2cf;
   padding: 0;
   right: 0;
-  width: 15%;
+  width: 50px;
   border-radius: 0px 20px 20px 0px;
   height: 100%;
   position: absolute;
   border: none;
   bottom: 0;
   opacity: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .menu__card__plat .btn__plat {
+    width: 70px;
+  }
 }
 
 .menu__card__plat .btn__plat .fa-check {
@@ -831,6 +854,20 @@ header .fa-solid {
 .menu__card__plat:hover .plat__price {
   -webkit-animation: price 600ms linear forwards;
   animation: price 600ms linear forwards;
+}
+
+@media screen and (min-width: 600px) {
+  .menu__card__plat:hover .plat__price {
+    -webkit-animation: price-tablette 600ms linear forwards;
+    animation: price-tablette 600ms linear forwards;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu__card__plat:hover .plat__price {
+    -webkit-animation: price-desktop 600ms linear forwards;
+    animation: price-desktop 600ms linear forwards;
+  }
 }
 
 .card__heart {
@@ -933,10 +970,22 @@ footer {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 40px;
+  }
+}
+
 footer .logo {
-  width: 27%;
+  width: 35%;
   -webkit-filter: invert(1);
   filter: invert(1);
+}
+
+@media screen and (min-width: 992px) {
+  footer .logo {
+    width: 20%;
+  }
 }
 
 .nav ul {
@@ -945,7 +994,7 @@ footer .logo {
   padding-top: 19px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -954,8 +1003,6 @@ footer .logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -1196,8 +1243,8 @@ footer .logo {
             transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(-125%);
-            transform: translateX(-125%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -1207,8 +1254,52 @@ footer .logo {
             transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(-125%);
-            transform: translateX(-125%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes price-desktop {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes price-desktop {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes price-tablette {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes price-tablette {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 /*# sourceMappingURL=main.css.map */
