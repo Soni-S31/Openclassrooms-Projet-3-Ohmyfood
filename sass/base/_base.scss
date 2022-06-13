@@ -23,7 +23,9 @@ header,
     padding: 30px;
 }
 
-.search {
+.search,
+.working,
+.selection {
     @include desktop {
         margin: 30px;
     }
@@ -32,6 +34,5 @@ main {
     @include display-column;
     @include desktop {
         gap: 10px;
-        margin: 30px;
     }
 }

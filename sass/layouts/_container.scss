@@ -53,7 +53,6 @@
     margin-bottom: 60px;
     margin-top: 20px;
     @include desktop {
-        margin: 10px;
         justify-content: flex-start;
         padding: 20px;
         gap: 25px;
@@ -236,9 +235,15 @@
     gap: 2%;
     .menu__resto__tittle {
         margin-left: 15px;
+        @include desktop {
+            margin-left: 25px;
+        }
     }
     .menu__heart {
         margin-right: 15px;
+        @include desktop {
+            margin-left: 20px;
+        }
     }
 }
 .menu__card {
@@ -276,7 +281,7 @@
 }
 .plat__price {
     margin: 10px 0px;
-    right: 20px;
+    right: 10px;
     position: relative;
 }
 
