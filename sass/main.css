@@ -907,7 +907,7 @@ header .fa-solid {
 
 .card__heart :hover {
   -webkit-animation: heart 3s ease both;
-  animation: heart 2s ease both;
+  animation: heart 3s ease both;
 }
 
 .menu__heart {
@@ -938,7 +938,7 @@ header .fa-solid {
 
 .menu__heart :hover {
   -webkit-animation: heart 3s ease both;
-  animation: heart 2s ease both;
+  animation: heart 3s ease both;
 }
 
 footer {
