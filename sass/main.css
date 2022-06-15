@@ -335,6 +335,7 @@ header .fa-solid {
 
 /* aside Fonctionnement Accueil*/
 .working {
+  cursor: pointer;
   gap: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -909,24 +910,6 @@ header .fa-solid {
   animation: heart 2s ease both;
 }
 
-@-webkit-keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .menu__heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,6 +921,7 @@ header .fa-solid {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .menu__heart .full {
@@ -955,24 +939,6 @@ header .fa-solid {
 .menu__heart :hover {
   -webkit-animation: heart 3s ease both;
   animation: heart 2s ease both;
-}
-
-@-webkit-keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 footer {
@@ -1184,6 +1150,76 @@ footer .logo {
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+
+/*loader*/
+@-webkit-keyframes fill {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes fill {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/* heart */
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

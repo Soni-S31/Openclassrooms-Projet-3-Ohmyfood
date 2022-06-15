@@ -9,31 +9,13 @@
     & :hover {
         -webkit-animation: heart 3s ease both;
         animation: heart 2s ease both;
-
-        @-webkit-keyframes heart {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes heart {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
     }
 }
 
 .menu__heart {
     @include center-flex-end;
     margin-right: 20px;
-
+    cursor: pointer;
     .full {
         opacity: 0;
         @include heart-full;
@@ -42,23 +24,5 @@
     & :hover {
         -webkit-animation: heart 3s ease both;
         animation: heart 2s ease both;
-
-        @-webkit-keyframes heart {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes heart {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
     }
 }

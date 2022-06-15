@@ -48,6 +48,7 @@
 
 /* aside Fonctionnement Accueil*/
 .working {
+    cursor: pointer;
     gap: 35px;
     @include display-column;
     margin-bottom: 60px;
