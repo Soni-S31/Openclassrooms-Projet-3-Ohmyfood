@@ -1,5 +1,6 @@
 .card__heart {
     font-size: xx-large;
+    cursor: pointer;
     .full {
         opacity: 0;
         @include heart-full;

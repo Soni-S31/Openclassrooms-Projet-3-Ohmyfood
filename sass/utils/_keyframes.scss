@@ -4,7 +4,6 @@
         transform: translateY(40%);
         opacity: 0;
     }
-
     100% {
         transform: translateY(10%);
         opacity: 1;
@@ -15,7 +14,6 @@
         transform: translateY(40%);
         opacity: 0;
     }
-
     100% {
         transform: translateY(10%);
         opacity: 1;
@@ -34,7 +32,6 @@
         right: 0;
     }
 }
-
 @keyframes btn-check {
     0% {
         transform: translateX(40%);
@@ -52,7 +49,6 @@
         opacity: 1;
     }
 }
-
 @keyframes check {
     100% {
         transform: rotate(360deg);

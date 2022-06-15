@@ -202,6 +202,7 @@ main {
   border-radius: 40px;
   -webkit-box-shadow: -5px 5px 5px whitesmoke;
           box-shadow: -5px 5px 5px whitesmoke;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -888,6 +889,7 @@ header .fa-solid {
 
 .card__heart {
   font-size: xx-large;
+  cursor: pointer;
 }
 
 .card__heart .full {
