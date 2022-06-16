@@ -172,14 +172,14 @@ main {
 }
 
 .menu__card .plat__desc .plat__desc__tittle {
-  font-size: 22px;
+  font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .menu__card .plat__desc .plat__desc__exp {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   white-space: nowrap;
   overflow: hidden;
@@ -202,8 +202,7 @@ main {
   border-radius: 40px;
   -webkit-box-shadow: -5px 5px 5px whitesmoke;
           box-shadow: -5px 5px 5px whitesmoke;
-  cursor: -webkit-grab;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -336,8 +335,7 @@ header .fa-solid {
 
 /* aside Fonctionnement Accueil*/
 .working {
-  cursor: -webkit-grab;
-  cursor: grab;
+  cursor: pointer;
   gap: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,8 +890,7 @@ header .fa-solid {
 
 .card__heart {
   font-size: xx-large;
-  cursor: -webkit-grab;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .card__heart .full {
