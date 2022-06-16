@@ -48,7 +48,8 @@
 
 /* aside Fonctionnement Accueil*/
 .working {
-    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
     gap: 35px;
     @include display-column;
     margin-bottom: 60px;

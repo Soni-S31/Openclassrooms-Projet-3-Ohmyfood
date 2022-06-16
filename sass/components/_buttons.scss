@@ -8,7 +8,8 @@
     @include gradient;
     border-radius: 40px;
     box-shadow: $shadow;
-    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
     &:hover {
         @include btn-hover;
     }

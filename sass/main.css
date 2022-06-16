@@ -202,7 +202,8 @@ main {
   border-radius: 40px;
   -webkit-box-shadow: -5px 5px 5px whitesmoke;
           box-shadow: -5px 5px 5px whitesmoke;
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .btn:hover,
@@ -335,7 +336,8 @@ header .fa-solid {
 
 /* aside Fonctionnement Accueil*/
 .working {
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
   gap: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,7 +892,8 @@ header .fa-solid {
 
 .card__heart {
   font-size: xx-large;
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .card__heart .full {

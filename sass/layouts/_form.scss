@@ -1,6 +1,7 @@
 .card__heart {
     font-size: xx-large;
-    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
     .full {
         opacity: 0;
         @include heart-full;
