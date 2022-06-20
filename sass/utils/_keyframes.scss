@@ -125,17 +125,21 @@
 }
 
 @-webkit-keyframes price {
+    0% {
+        transform: translateX(0%);
+    }
     100% {
         transform: translateX(-160%);
     }
 }
-
 @keyframes price {
+    0% {
+        transform: translateX(0%);
+    }
     100% {
         transform: translateX(-160%);
     }
 }
-
 @-webkit-keyframes price-desktop {
     0% {
         transform: translateX(0%);
@@ -144,7 +148,6 @@
         transform: translateX(-210%);
     }
 }
-
 @keyframes price-desktop {
     0% {
         transform: translateX(0%);
@@ -153,7 +156,6 @@
         transform: translateX(-210%);
     }
 }
-
 @-webkit-keyframes price-tablette {
     0% {
         transform: translateX(0%);
@@ -162,7 +164,6 @@
         transform: translateX(-200%);
     }
 }
-
 @keyframes price-tablette {
     0% {
         transform: translateX(0%);
