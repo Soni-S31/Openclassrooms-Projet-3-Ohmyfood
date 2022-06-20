@@ -22,7 +22,7 @@
         position: absolute;
     }
     & :hover {
-        -webkit-animation: heart 3s ease both;
-        animation: heart 3s ease both;
+        -webkit-animation: heart 800ms ease both;
+        animation: heart 800ms ease both;
     }
 }

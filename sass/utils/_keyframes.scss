@@ -126,13 +126,13 @@
 
 @-webkit-keyframes price {
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-160%);
     }
 }
 
 @keyframes price {
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-160%);
     }
 }
 
@@ -141,7 +141,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-160%);
+        transform: translateX(-210%);
     }
 }
 
@@ -150,7 +150,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-160%);
+        transform: translateX(-210%);
     }
 }
 
@@ -159,7 +159,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-190%);
+        transform: translateX(-200%);
     }
 }
 
@@ -168,6 +168,6 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-190%);
+        transform: translateX(-200%);
     }
 }

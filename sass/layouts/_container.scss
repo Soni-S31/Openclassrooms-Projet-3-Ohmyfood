@@ -375,18 +375,6 @@
     }
     &:hover {
         cursor: pointer;
-        .plat__price {
-            -webkit-animation: price 600ms linear forwards;
-            animation: price 600ms linear forwards;
-            @include tablette {
-                -webkit-animation: price-tablette 600ms linear forwards;
-                animation: price-tablette 600ms linear forwards;
-            }
-            @include desktop {
-                -webkit-animation: price-desktop 600ms linear forwards;
-                animation: price-desktop 600ms linear forwards;
-            }
-        }
         .btn__plat {
             -webkit-animation-name: btn-check;
             animation-name: btn-check;
@@ -405,6 +393,18 @@
         }
         .plat__desc {
             width: 70%;
+        }
+        .plat__price {
+            -webkit-animation: price 600ms linear forwards;
+            animation: price 600ms linear forwards;
+            @include tablette {
+                -webkit-animation: price-tablette 600ms linear forwards;
+                animation: pricetablette 600ms linear forwards;
+            }
+            @include desktop {
+                -webkit-animation: price-desktop 600ms linear forwards;
+                animation: price-desktop 600ms linear forwards;
+            }
         }
     }
 }
