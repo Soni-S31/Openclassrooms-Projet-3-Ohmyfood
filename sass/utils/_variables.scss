@@ -8,7 +8,8 @@ $color-white: #fff;
 $color-gray-f: hsla(0, 0%, 92%, 1);
 $color-gray-ff: hsla(0, 0%, 91%, 1);
 $color-gray: hsla(0, 0%, 96%, 1);
-$color-gray-black: hsla(0, 1%, 21%, 1);
+$color-grayshadow: rgb(0 0 0 / 20%);
+$color-gray-hover: rgb(0 0 0 / 30%);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 $color-gradient3: linear-gradient(
     $color-primary,
@@ -17,8 +18,8 @@ $color-gradient3: linear-gradient(
 );
 $color-magnolia: hsla(267, 100%, 96%, 1);
 
-$shadow: -5px 5px 5px $color-gray;
-$shadow-I: -5px 5px 5px $color-gray-black;
+$shadow: 0px 5px 8px $color-grayshadow;
+$shadow-I: 0px 5px 8px $color-gray-hover;
 $shadow-explain: -5px 5px 20px 2px $color-gray-ff;
 
 $breakpoints: (

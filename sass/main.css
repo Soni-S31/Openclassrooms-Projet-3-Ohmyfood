@@ -200,16 +200,16 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
   background: linear-gradient(#ff7ad9, #9256dc);
   border-radius: 40px;
-  -webkit-box-shadow: -5px 5px 5px whitesmoke;
-          box-shadow: -5px 5px 5px whitesmoke;
+  -webkit-box-shadow: 4px 4px 5px #d4d1d1;
+          box-shadow: 4px 4px 5px #d4d1d1;
   cursor: pointer;
 }
 
 .btn:hover,
 .menu__button:hover {
-  opacity: 0.85;
-  -webkit-box-shadow: -5px 5px 5px #363535;
-          box-shadow: -5px 5px 5px #363535;
+  opacity: 0.8;
+  -webkit-box-shadow: 4px 4px 9px #a5a1a1;
+          box-shadow: 4px 4px 9px #a5a1a1;
 }
 
 .menu__button {
@@ -563,8 +563,8 @@ header .fa-solid {
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 20px;
-  -webkit-box-shadow: -5px 5px 5px whitesmoke;
-          box-shadow: -5px 5px 5px whitesmoke;
+  -webkit-box-shadow: 4px 4px 5px #d4d1d1;
+          box-shadow: 4px 4px 5px #d4d1d1;
 }
 
 @media screen and (min-width: 992px) {
@@ -718,8 +718,8 @@ header .fa-solid {
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 25px;
-  -webkit-box-shadow: -5px 5px 5px whitesmoke;
-          box-shadow: -5px 5px 5px whitesmoke;
+  -webkit-box-shadow: 4px 4px 5px #d4d1d1;
+          box-shadow: 4px 4px 5px #d4d1d1;
 }
 
 .menu__card__plat .plat__desc {
@@ -906,8 +906,8 @@ header .fa-solid {
 }
 
 .card__heart :hover {
-  -webkit-animation: heart 3s ease both;
-  animation: heart 3s ease both;
+  -webkit-animation: heart 800ms ease both;
+  animation: heart 800ms ease both;
 }
 
 .menu__heart {
@@ -942,7 +942,7 @@ header .fa-solid {
 }
 
 footer {
-  background: #363535;
+  background: #a5a1a1;
   padding: 30px 30px 30px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
